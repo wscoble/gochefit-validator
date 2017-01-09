@@ -1,0 +1,13 @@
+{
+  "FunctionName": "ShippingValidator",
+  "Description": "Shipping values validator for CHEFit web application",
+  "Handler": "handler.handle",
+  "Timeout": 5,
+  "MemorySize": 128,
+  "Runtime": "python2.7",
+  "Publish": true,
+  "Role": "arn:aws:iam::165655401843:role/gochefit-lambda-function",
+  "DeadLetterConfig": {
+    "TargetArn": "arn:aws:sns:us-east-1:165655401843:CHEFitDLQ"
+    }
+}
